@@ -85,6 +85,7 @@ def get_grouping(df, grouping_vars):
     add_confints(x)
     return x
 
+
 def gen_inflect_from_vocab(vocab_file, freq_threshold=1000):
     vbp = {}
     vbz = {}
@@ -115,6 +116,7 @@ def gen_inflect_from_vocab(vocab_file, freq_threshold=1000):
             noun_infl[word] = candidate
 
     return verb_infl, noun_infl
+
 
 def annotate_relpron(df):
     pd.options.mode.chained_assignment = None
